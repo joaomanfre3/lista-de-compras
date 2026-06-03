@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Tema "mercado" claro com acento teal — identidade própria na coleção */
+  --color-ink: #102a2b;
+  --color-accent: #0d9488; /* teal */
+  --color-paper: #f2fbf9;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  min-height: 100dvh;
+  color: var(--color-ink);
+  background:
+    radial-gradient(80% 50% at 50% -10%, #cdf3ec 0%, transparent 65%),
+    var(--color-paper);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: #99f6e4;
+  color: #102a2b;
+}
